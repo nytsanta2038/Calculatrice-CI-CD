@@ -8,6 +8,15 @@
   <artifactId>calculatrice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  <!-- dépendence launch4j -->
+  <dependencies>
+    <dependency>
+      <groupId>com.akathist.maven.plugins.launch4j</groupId>
+      <artifactId>launch4j</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+  </dependencies>
+
   <name>calculatrice</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
@@ -87,13 +96,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
-    <!-- dépendences launch4j -->
-  <dependencies>
-    <dependency>
-      <groupId>com.akathist.maven.plugins.launch4j</groupId>
-      <artifactId>launch4j</artifactId>
-      <version>1.7.25</version>
-    </dependency>
-  </dependencies>
 </project>
