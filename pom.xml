@@ -60,7 +60,40 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+          <groupId>com.akathist.maven.plugins.launch4j</groupId>
+          <artifactId>launch4j-maven-plugin</artifactId>
+          <version>1.7.25</version>
+          <executions>
+            <execution>
+              <id>l4j-clui</id>
+              <phase>package</phase>
+              <goals>
+                <goal>launch4j</goal>
+              </goals>
+              <configuration>
+                <!-- Configuration du fichier exécutable ici -->
+                <headerType>gui</headerType>
+                <jar>target/calculatrice-0.0.1-SNAPSHOT.jar</jar>
+                <outfile>target/calculatrice.exe</outfile>
+                <downloadUrl>http://java.com/download</downloadUrl>
+                <classPath>
+                  <mainClass>com.etglp59.calculatrice.Calculatrice</mainClass>
+                </classPath>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
+
+    <!-- dépendences launch4j -->
+  <dependencies>
+    <dependency>
+      <groupId>com.akathist.maven.plugins.launch4j</groupId>
+      <artifactId>launch4j</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+  </dependencies>
 </project>
