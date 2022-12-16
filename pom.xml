@@ -10,7 +10,7 @@
     <!-- dépendence launch4j -->
   <dependencies>
     <dependency>
-      <groupId>com.akathist.maven.plugins.launch4j.launch4j-maven-plugins</groupId>
+      <groupId>com.akathist.maven.plugins.launch4j-maven-plugins</groupId>
       <artifactId>launch4j-maven-plugin</artifactId>
       <version>1.7.25</version>
     </dependency>
