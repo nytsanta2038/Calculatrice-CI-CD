@@ -12,7 +12,7 @@
     <dependency>
       <groupId>com.akathist.maven.plugins.launch4j</groupId>
       <artifactId>launch4j-maven-plugin</artifactId>
-      <version>1.7.25</version>
+      <version>2.2.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -76,7 +76,7 @@
         <plugin>
           <groupId>com.akathist.maven.plugins.launch4j</groupId>
           <artifactId>launch4j-maven-plugin</artifactId>
-          <version>1.7.25</version>
+          <version>2.2.0</version>
           <executions>
             <execution>
               <id>l4j-clui</id>
@@ -89,7 +89,6 @@
                 <headerType>gui</headerType>
                 <jar>target/calculatrice-0.0.1-SNAPSHOT.jar</jar>
                 <outfile>target/calculatrice.exe</outfile>
-                <downloadUrl>http://java.com/download</downloadUrl>
                 <classPath>
                   <mainClass>com.etglp59.calculatrice.Calculatrice</mainClass>
                 </classPath>
